@@ -23,7 +23,8 @@ driver.refresh()
 time.sleep(2)
 
 #to check current url
-print(f"the current url is {driver.current_url}")
+assert driver.current_url == url, "Redirection failed"
+print(f"Redirectiom succesfull")
 
 #to check the title of page
 print(f"The title of the page is {driver.title}")
