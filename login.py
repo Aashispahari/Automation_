@@ -50,6 +50,7 @@ time.sleep(2)
 password.send_keys("secret_sauce")
 time.sleep(2)
 
+login_button.screenshot("login_button.png")
 login_button.click()
 time.sleep(2)
 
@@ -59,7 +60,7 @@ if driver.current_url == "https://www.saucedemo.com/inventory.html":
 else: 
     print(f"Login failed")
 
-
+# driver.save_screenshot("login.png")
 time.sleep(2)
 
 
